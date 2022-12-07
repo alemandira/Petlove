@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Inicio do Projeto</h1>
-     <a href="https://alemandira.github.io/Petlove/">"Site Pet-Love"</a>
+     <a href="https://alemandira.github.io/petlove/">"Site Pet-Love"</a>
     
 </body>
 </html>
