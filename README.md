@@ -8,7 +8,7 @@
 <body>
     <h1>Inicio do Projeto</h1> 
     clique aqui
-    <p> https://alemandira.github.io/Petlove/</p>
+    <p> https://alemandira.github.io/petlove/</p>
     
 </body>
 </html>
