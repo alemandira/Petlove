@@ -5,10 +5,10 @@
 
 :root {
   --cor0:  #052430; 
-  --cor01: #2D6C99;
-  --cor02: #FFB900; 
+  --cor01: #e2954d;
+  --cor02: #f5f3ed; 
   --cor03: #E2E3E4;
-  --cor04: #8d8b91;
+  --cor04: #f5b83ecb;
   --cor05: #A5A692;
   --cor06: #C43302;
 
@@ -33,16 +33,17 @@ body {
 }
 
 header {
+
     font-family: var(--font02);
     color: var(--cor02);
-    padding-top: 10px;
+    padding-top: 30px;
     border-radius: 5px;
-    background-color: var(--cor01);
-    height: 142px;
+    background-image: linear-gradient(to left, #e6c01c, #ee7708); 
+    height: 160px;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 70px;
     text-shadow: 5px 5px 5px var(--cor0);
     text-align: left;
     text-indent: 60px;
@@ -50,11 +51,11 @@ h1 {
 
 .navbar {   
     font-family: var(--font02);
-    margin-top: 41px;
+    margin-top: 38px;
     margin-bottom: 0px;    
     padding-right: 12px;   
     overflow: hidden;
-    background-color: var(--cor02);
+    background-color: var(--cor03);
     border-radius: 3px;    
   }
   
@@ -65,7 +66,7 @@ h1 {
     margin-right: 5px;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
-    background-color: var(--cor02);
+    background-color: var(--cor01);
     border: 2px solid var(--cor0);
     border-radius: 5px;
   }
@@ -87,11 +88,11 @@ h1 {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-    background-color: var(--cor02);
+    background-color: var(--cor01);
   }
   
   .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #fcd05a;
+    background-color: #f8f6f1;
   }
   
   .subnav-content {
@@ -176,7 +177,7 @@ aside {
 }
 
 h3 {
-    background-color: #2D6C99;
+    background-color: #d3a408;
     color: var(--cor0);
     font-family: var(--font02);
     font-style: italic;
@@ -186,7 +187,7 @@ h3 {
 }
 
 aside>p {          
-    text-indent: 25px;
+    text-indent: 0px;
     margin: 5px;
     padding: 0px 0px 15px 0px;
 }
