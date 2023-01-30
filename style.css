@@ -50,8 +50,8 @@ h1 {
 }
 
 h1 > img {
-  width: 17vh;
-  height: 17vh;  
+  width: 10vh;
+  height: 10vh;  
   padding-right: 30px;
   float: right;
 }
