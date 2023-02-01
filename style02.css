@@ -127,17 +127,6 @@ h1 > img {
   display: block;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin: auto;
-  border-radius: 5px;
-  box-shadow: 2px 2px 3px black;
-  max-width: 595px;
-  min-width: 100px;  
-}
-
 h2 {
   font-size: 40px;
   color: var(--cor0);
@@ -145,28 +134,30 @@ h2 {
   font-style: italic;
   text-align: center;
   border-radius: 5px;
-
 }
 
-section {
-  width: 595px;
-  min-width: 100px;
-  height: 650px;
-  border-radius: 5px;
-  text-align: justify;
-  background-color: white;
+fieldset {
+  margin: auto;
+  text-align: left;
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: 2px solid black;
 }
 
-section>p {
-  text-indent: 40px;
-  margin: 15px;
-  padding: 15px 0px 15px 0px;
+fieldset > form> p{
+  font-family: 'Times New Roman', Times, serif;
+  padding: 5px 2px 21px 10px;
 }
+
+
 
 footer {  
+  position: absolute;
+  bottom: 0px;
+  width: 100%;  
   margin-bottom: auto;
   color: white;
   background-color: black;
-  text-align: center;
-  border-radius: 5px;
+  text-align: center;    
 }
