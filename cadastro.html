@@ -46,36 +46,32 @@
     <main>
         <section>
             <h2> Cadastro</h2>
-            <fieldset>
+            
                 <form action="cadastro.php" method="get">
-                    <p>
-                        <label for="inom">Nome:</label>
-                        <input type="text" name="nome" id="inom" required maxlength="35" size="40" placeholder="digite seu nome"><br>
-                    </p>
+                    <fieldset>
+                        <p>
+                            <label for="inom">Nome:</label>
+                            <input type="text" name="nome" id="inom" required maxlength="35" size="40" placeholder="digite seu nome"><br>
+                        </p>
+                        <p>
+                            <label for="itel">Telefone</label>
+                            <input type="tel" name="tel" id="itel" required maxlength="9" size="10" placeholder="tel"><br>
+                        </p>
+                        <p>
+                            <label for="imai">E-mail:</label>
+                            <input type="email" name="email" id="imai" required maxlength="40" size="41" placeholder="digite seu e-mail"><br>
+                        </p>
+                        <p>
+                            <label for="isen">Senha: </label>
+                            <input type="password" name="sen" id="isen" required minlength="5" maxlength="9" size="9"><br>
+                        </p>
+                        <p>
+                            <input type="submit" value="Cadastrar">
+                            <input type="reset" value="Limpar">
+                        </p>
+                    </fieldset>
 
-                    <p>
-                        <label for="itel">Telefone</label>
-                        <input type="tel" name="tel" id="itel" required maxlength="9" size="10" placeholder="tel"><br>
-                    </p>
-
-                    <p>
-                        <label for="imai">E-mail:</label>
-                        <input type="email" name="email" id="imai" required maxlength="40" size="41" placeholder="digite seu e-mail"><br>
-                    </p>
-
-                    <p>
-                        <label for="isen">Senha: </label>
-                        <input type="password" name="sen" id="isen" required minlength="5" maxlength="9" size="9"><br>
-                    </p>
-
-                    <p>
-                        <input type="submit" value="Cadastrar">
-                        <input type="reset" value="Limpar">
-                    </p>
-
-                </form>
-            </fieldset>
-           
+                </form>                      
     </main>
 
     <footer>

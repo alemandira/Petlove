@@ -145,7 +145,7 @@ fieldset {
   border: 2px solid black;
 }
 
-fieldset > form> p{
+fieldset > p{
   font-family: 'Times New Roman', Times, serif;
   padding: 5px 2px 21px 10px;
 }
