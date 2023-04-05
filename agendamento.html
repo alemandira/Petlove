@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Mandira.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style02.css">
+    <title>PET-LOVE</title>
+
+</head>
+
+<body>
+    <header>
+        <h1><i>Pet-Love</i> <img src="pastor.png" alt=""></h1>
+   
+        <div class="navbar">
+            <a href="#home">Contact</a>
+
+
+            <div class="subnav">
+                <button class="subnavbtn">Consultas<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="#team">Agendamento</a>
+                    <a href="cadastro.html">Cadastro</a>
+                </div>
+            </div>
+
+            <div class="subnav">
+                <button class="subnavbtn">Raças<i class="fa fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="index5.html">Chihuahua</a>
+                    <a href="index4.html">Pastor Alemão</a>
+                    <a href="index3.html">Pit-Bull</a>
+                    <a href="index2.html">Dalmata</a>
+                </div>
+            </div>
+
+            <a href="index.html">Home</a>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section>
+            <h2> Agendamento</h2>
+            
+                <form action="agendamento.php" method="get">
+                    <fieldset>                                           
+                        <p>
+                            <label for="nomepet">Nome do Animal: </label>
+                            <input type="text" name="npet" id="nomepet">
+                        </p>
+                        <p>
+                            <label for="tpet">Tipo de Pet: </label>
+                            <input type="text" name="pet" id="tpet" list="listapet">
+                            <datalist id="listapet">
+                                <option >Cachorro</option>
+                                <option >Gato</option>
+                                <option >Pássaro</option>
+                                <option >Peixe</option>
+                            </datalist>
+                        </p>
+                        <p>
+                            
+                        </p>
+                        <p>
+                            <label for="imai">E-mail:</label>
+                            <input type="email" name="email" id="imai" required maxlength="40" size="41" placeholder="digite seu e-mail"><br>
+                        </p>
+                        <p>
+                            <label for="isen">Senha: </label>
+                            <input type="password" name="sen" id="isen" required minlength="5" maxlength="9" size="9"><br>
+                        </p>
+                        <p>
+                            <input type="submit" value="Cadastrar">
+                            <input type="reset" value="Limpar">
+                        </p>
+                    </fieldset>
+
+                </form>                      
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Alemandira</p>
+    </footer>
+
+</body>
+
+</html>
