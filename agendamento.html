@@ -16,12 +16,21 @@
         <h1><i>Pet-Love</i> <img src="pastor.png" alt=""></h1>
    
         <div class="navbar">
-            <a href="#home">Contact</a>
+            
+            <div class="subnav">
+                <button class="subnavbtn">Consultas<i class="fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="deletar.html">Deletar</a>
+                    <a href="cancelar.html">Cancelar consultas</a> 
+                    <a href="pesquisar.html">Pesquisar</a>                                      
+                </div>
+            </div>
 
 
             <div class="subnav">
-                <button class="subnavbtn">Consultas<i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn">Clientes<i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
+                    <a href="consultas.html">Consultas</a>
                     <a href="agendamento.html">Agendamento</a>
                     <a href="cadastro.html">Cadastro</a>
                 </div>
@@ -48,41 +57,40 @@
             <h2> Agendamento</h2>
             
                 <form action="agendamento.php" method="post">
-                    <fieldset>                       
-                        <p>
-                            <label for="imai">E-mail:</label>
-                            <input type="email" name="email" id="imai" required maxlength="40" size="41" placeholder="digite seu e-mail"><br>
-                        </p>
+                    <fieldset>   
                         
                         <p>
-                            <label for="isen">Senha: </label>
-                            <input type="password" name="sen" id="isen" required minlength="5" maxlength="9" size="9"><br>
+                            <label for="agemail">Email</label>
+                            <input type="email" name="cadastro_email" id="agemail" required maxlength="40" size="41" placeholder="digite seu email">
                         </p>
 
                         <p>
-                            <label for="nomepet">Nome do Pet: </label>
-                            <input type="text" name="npet" id="nomepet" size="13">&ensp;
+                            <label for="agesenha">Senha:</label>
+                            <input type="password" name="cadastro_senha" id="agesenha" required maxlength="9" size="9" placeholder="digite a senha">
+                        </p>
 
-                            <label for="tpet">Tipo de Pet: </label>
-                            <input type="text" name="pet" id="tpet"  size="15" list="listapet">
-                            <datalist id="listapet">
-                                <option >Cachorro</option>
-                                <option >Gato</option>
-                                <option >Pássaro</option>
-                                <option >Peixe</option>
-                            </datalist>                            
+                                                                        
+                        <p>
+                            <label for="nomepet">Nome do Pet: </label>
+                            <input type="text" name="nome_pet" id="nomepet" size="15" required>&ensp;
+
+                            <label for="tipopet">Tipo de Pet: </label>
+                            <input type="text" name="tipo_pet" id="tipopet"  size="15" required>                                                      
                         </p>
                        
                         <p>
                             <label for="petdia">Data da consulta: </label>
-                            <input type="date" name="dia" id="petdia">&emsp;
+                            <input type="date" name="data_consulta" id="petdia" required>&emsp;
+                            
                             <label for="pethora">horário: </label>
-                            <input type="time" name="hora" id="pethora">                            
+                            <input type="time" name="hora" id="pethora" required>                            
                         </p> 
                         <p>
                             <label for="petmens">Mensagem: </label><br>
-                            <textarea name="petmens" id="" cols="55" rows="10" placeholder="Sintomas do animal..."></textarea>
+                            <textarea name="mensagem" id="" cols="55" rows="10" placeholder="Sintomas do animal..."></textarea>
                         </p>
+                      
+                      
                         <p>
                             <input type="submit" value="Cadastrar">
                             <input type="reset" value="Limpar">

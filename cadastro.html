@@ -16,12 +16,21 @@
         <h1><i>Pet-Love</i> <img src="pastor.png" alt=""></h1>
    
         <div class="navbar">
-            <a href="#home">Contact</a>
+            
+            <div class="subnav">
+                <button class="subnavbtn">Consultas<i class="fa-caret-down"></i></button>
+                <div class="subnav-content">
+                    <a href="deletar.html">Deletar</a>
+                    <a href="cancelar.html">Cancelar consultas</a> 
+                    <a href="pesquisar.html">Pesquisar</a>                                      
+                </div>
+            </div>
 
 
             <div class="subnav">
-                <button class="subnavbtn">Consultas<i class="fa fa-caret-down"></i></button>
+                <button class="subnavbtn">Clientes<i class="fa fa-caret-down"></i></button>
                 <div class="subnav-content">
+                    <a href="consultas.html">Consultas</a>
                     <a href="agendamento.html">Agendamento</a>
                     <a href="cadastro.html">Cadastro</a>
                 </div>
@@ -48,28 +57,32 @@
             <h2> Cadastro</h2>
             
                 <form action="cadastro.php" method="post">
-                    <fieldset>
-                        <p>
-                            <label for="inom">Nome:</label>
-                            <input type="text" name="nome" id="inom" required maxlength="35" size="40" placeholder="digite seu nome"><br>
-                        </p>
-                        <p>
-                            <label for="itel">Telefone</label>
-                            <input type="tel" name="telefone" id="itel" required maxlength="9" size="10" placeholder="tel"><br>
-                        </p>
-                        <p>
-                            <label for="imai">E-mail:</label>
-                            <input type="email" name="email" id="imai" required maxlength="40" size="41" placeholder="digite seu e-mail"><br>
-                        </p>
-                        <p>
-                            <label for="isen">Senha: </label>
-                            <input type="password" name="senha" id="isen" required minlength="5" maxlength="9" size="9"><br>
-                        </p>
-                        <p>
-                            <input type="submit" value="Cadastrar">
-                            <input type="reset" value="Limpar">
-                        </p>
-                    </fieldset>
+                    <div class="quadrado">
+                        <fieldset>
+                            <p>
+                                <label for="cmai">E-mail:</label>
+                                <input type="email" name="email" id="cmai" required maxlength="40" size="41" placeholder="digite seu e-mail"><br>
+                            </p>
+                            <p>
+                                <label for="csenha">Senha:</label>
+                                <input type="password" name="senha" id="csenha" required maxlength="9" size="9" placeholder="digite a senha">
+                            </p>
+                            <p>
+                                <label for="cnome">Nome:</label>
+                                <input type="text" name="nome" id="cnome" required maxlength="35" size="40" placeholder="digite seu nome"><br>
+                            </p>
+                        
+                            <p>
+                                <label for="ctel">Telefone</label>
+                                <input type="tel" name="telefone" id="ctel" required maxlength="9" size="9" placeholder="tel"><br>
+                            </p>
+                        
+                            <p>
+                                <input type="submit" value="Cadastrar">
+                                <input type="reset" value="Limpar">
+                            </p>
+                        </fieldset>
+                    </div>
 
                 </form>                      
     </main>

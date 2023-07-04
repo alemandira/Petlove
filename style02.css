@@ -28,8 +28,8 @@
 body {
   font-family: var(--font04);
   text-align: center;
-  margin: auto;
-  background-color: var(--cor04);  
+  margin: auto;  
+  background-color: var(--cor04);
 }
 
 header {
@@ -137,10 +137,11 @@ h2 {
 }
 
 fieldset {
-  margin: auto;
+  margin: auto;  
   text-align: left;
   width: 400px;
   height: 300px;
+  background-color: var(--cor02);
   border-radius: 10px;
   border: 2px solid black;
 }
